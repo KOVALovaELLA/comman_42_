@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Samantha Stivens - Resume</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px; /* Adjusted for fixed navbar */
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .resume-section {
+            padding: 60px 0;
+            height: 100vh;
+        }
+        .section1,  .section3 {
+    background-attachment: fixed;
+}
+        .section1 {
+    height: 100vh;
+    background-image: url('./img1.jpg'); 
+    background-size: cover;
+    background-position: center;
+  /*  position: relative;*/
+    text-align: center;
+    color: rgb(19, 17, 17);
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+}
+.section3 {
+    height: 100vh;
+    background-image: url('./img.jpg'); 
+    background-size: cover;
+    background-position: center;
+   /* position: relative;*/
+   /*  text-align: center; */
+    color: rgb(23, 21, 21);
+   /*  display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.person{
+    max-width: 500px;
+    width: 100%;
+}
+.name-about{
+    max-width: 300px;
+}
+
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="56">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand name-about" href="#">Samantha Stivens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="resume-section section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Your Photo Here -->
+                    <img src="./person1.png" alt="Your Photo" class="img-fluid  person" width="260px">   <!-- rounded-circle -->
+                </div>
+                <div class="col-lg-8">
+                    <h2>Samantha Stivens</h2>
+                    <p>Web Designer</p>
+                    <p>
+                        I am a passionate and dedicated professional with a strong background in [Your Field].<!-- Add more details about yourself -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="resume-section bg-light">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <!-- Add details about your work experience -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Company XYZ</h3>
+                    <p>Position: [Your Position]</p>
+                    <p>Duration: [Start Date] - [End Date]</p>
+                    <p>
+                        Responsibilities:
+                        <ul>
+                            <li>Accomplishment 1</li>
+                            <li>Accomplishment 2</li>
+                            <!-- Add more accomplishments -->
+                        </ul>
+                    </p>
+                </div>
+                <!-- Add more work experience sections as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="resume-section section3">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (555) 555-5555</p>
+            <!-- Add links to your social profiles, portfolio, etc. -->
+        </div>
+    </section>
+    <!-- плавный скрол -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+    <!-- Link Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
+
+
+</body>
+</html>
